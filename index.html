@@ -33,41 +33,60 @@
                 <div class="infoarea">
                     <label for="name1">1st Name</label>
                     <br>
-                    <input id="name1" type="text" oninput="firstNameValue()">
+                    <input id="name1" type="text" oninput="firstNameValue(); initialValue();">
                 </div>
 
                 <div class="infoarea">
                     <label for="name2">2nd Name</label>
                     <br>
-                    <input type="text">
+                    <input id="name2" type="text" oninput="firstNameValue(); initialValue();">
                 </div>
                 
                 <div class="infoarea">
-                    <label for="lastname">Last Name</label>
+                    <label for="lname">Last Name</label>
                     <br>
-                    <input type="text">
+                    <input id="lname" type="text" oninput="lastNameValue()">
                 </div>
 
                 <div class="infoarea">
                     <label for="date">Date</label>
                     <br>
-                    <input type="date">
+                    <input id="date" type="date" oninput="dateValue()">
                 </div>
 
                 <div class="infoarea">
                     <label for="location">Wedding Location</label>
                     <br>
-                    <input type="text">
+                    <input id="location" type="text" oninput="locationNameValue()">
                 </div>
 
             </div>
 
             <div id="card">
                 
-                <p id="firstname">1st Name</p>
-                
-                
-               
+                <div class="initialarea">
+                <p id="initial">Initials</p>
+                </div>
+
+                <div class="locationarea">
+                <p id="invitation">Please join us for the wedding of</p>
+                </div>
+
+                <div class="locationarea">
+                <p id="firstname">----- & -----</p>
+                </div>
+
+                <div class="locationarea">
+                <p id="lastname">LAST NAME</p>
+                </div>
+
+                <div class="locationarea">
+                <p id="weddingdate">Wedding Date</p>
+                </div>
+
+                <div class="locationarea">
+                <p id="weddinglocation">LOCATION</p>
+                </div>
             
             
             
