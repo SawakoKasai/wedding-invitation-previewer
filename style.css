@@ -1,0 +1,54 @@
+body{
+    max-width: 1000px;
+    margin: auto 0;
+}
+
+#container{
+    max-width: 1000px;
+    margin: auto 0;
+    display: grid;
+    grid-template: 
+    "header1 header1" 50px
+    "header2 header2" 50px
+    "left right" auto
+    /300px 600px;
+    
+}
+#head{
+    border: solid ;
+    background-color: aqua  ;
+    grid-area: header1;
+}
+
+#head h1{
+    margin: auto 0;
+    padding: 0;
+    text-align: center;
+}
+
+#style{
+    border: solid ;
+    grid-area: header2;
+}
+
+#style ul{
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+    text-align: center;
+}
+
+#style li{
+    width: 33%;
+}
+
+#info{
+    border: solid ;
+    grid-area: left;
+
+}
+
+#card{
+    border: solid ;
+    grid-area: right;
+}
