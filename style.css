@@ -1,5 +1,5 @@
 *{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Helvetica;
 }
 
 
@@ -9,13 +9,13 @@
     display: grid;
     grid-template: 
     "header1 header1" 80px
-    "header2 header2" 60px
+    "header2 header2" 80px
     "left right" 800px
     /400px 600px;
     
 }
 #head{
-    background-color: rgb(237, 226, 238)  ;
+    background-color: rgb(43 76 68);;
     grid-area: header1;
 }
 
@@ -23,12 +23,15 @@
     margin: auto 0;
     text-align: center;
     padding-top: 20px;
+    color: white;
+    font-family: Helvetica;
 }
 
 #style{
     /*border: solid;*/
     padding-top: 20px;
     grid-area: header2;
+    background-color: rgb(241, 241, 241);
 }
 
 #style ul{
@@ -42,11 +45,31 @@
     width: 33%;
 }
 
+.stylebutton{
+    padding: 10px;
+    border: none;
+    font-size: 18px;
+}
+
+.infoarea input{
+    padding: 5px;
+    /*border-radius: 5px;*/
+    border-color: darkslategrey;
+    border-radius: 5px;
+
+}
+
+.stylebutton:hover{
+   color: rgb(60, 122, 122);
+   text-decoration: underline;
+}
+
 #info{
     /*border: solid;*/
     background-color: rgb(241, 241, 241);
     grid-area: left;
     padding: 20px;
+    padding-left: 50px;
 }
 
 
@@ -60,7 +83,6 @@
 
 #card{
     background-color: rgb(241, 241, 241);
-    position: relative;
     /*border: solid;*/
     grid-area: right;
     /*background-image: url(images/invitation-flower.jpeg);*/
@@ -73,6 +95,7 @@
 .initialarea{
     margin-top: 80px;
     padding-top: 50px;
+    padding-bottom: 10px;
     height: 150px;
     text-align: center;
     font-size: 65px;
@@ -82,7 +105,6 @@
 
 .locationarea{
     /*border: solid;*/
-    background-color: cadetblue;
     text-align: center;
 
 }
@@ -91,7 +113,6 @@
 #invitation{
     text-align: center;
     font-size: 20px;
-    background-color: rgb(209, 211, 188);
 }
 
 #firstname{
@@ -100,25 +121,21 @@
     left: 250px;*/
     text-align: center;
     font-size: 25px;
-    background-color: cadetblue;
 }
 
 #lastname{
     font-size: 30px;
     padding-top: 0px;
     margin-top: 5px;
-    background-color: rgb(209, 211, 188);
 }
 
 #weddingdate{
     font-size: 20px;
-    background-color: cadetblue;
 }
 
 
 #weddinglocation{
-    font-size: 25px;
-    background-color: rgb(209, 211, 188);   
+    font-size: 25px;  
 }
 
 

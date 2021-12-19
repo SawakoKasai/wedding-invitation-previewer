@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Playfair+Display">
     <title>Wedding Initaion Designer</title>
 
 </head>
@@ -15,48 +14,48 @@
         <div id="container">
 
             <div id="head">
-                <h1>Wedding Invitaion Planner</h1>
+                <h1>WEDDING INVITATION PLANNER</h1>
             </div>
 
 
             <div id="style">
 
                 <ul>
-                    <li><button onclick="style1()">Wild Flowers</button></li>
-                    <li><button onclick="changeStyle2()">Minimal Greenery</button></li>
-                    <li><button onclick="changeStyle3()">Tropical Boho Frame</button></li>
+                    <li><button class="stylebutton" onclick="changeStyle(0,'Helvetica','black' )">Wild Flowers</button></li>
+                    <li><button class="stylebutton" onclick="changeStyle(1,'Trirong, serif','black' )">Minimal Greenery</button></li>
+                    <li><button class="stylebutton" onclick="changeStyle(2,'Playfair Display', 'white')">Tropical Boho Frame</button></li>
                 </ul>
 
             </div>
 
-            <div id="info">
+            <div id="info">   
 
                 <div class="infoarea">
-                    <label for="name1">1st Name</label>
+                    <label for="name1">1st Name:</label>
                     <br>
                     <input id="name1" type="text" oninput="firstNameValue(); initialValue();">
                 </div>
 
                 <div class="infoarea">
-                    <label for="name2">2nd Name</label>
+                    <label for="name2">2nd Name:</label>
                     <br>
                     <input id="name2" type="text" oninput="firstNameValue(); initialValue();">
                 </div>
                 
                 <div class="infoarea">
-                    <label for="lname">Last Name</label>
+                    <label for="lname">Last Name:</label>
                     <br>
                     <input id="lname" type="text" oninput="lastNameValue()">
                 </div>
 
                 <div class="infoarea">
-                    <label for="date">Date</label>
+                    <label for="date">Date:</label>
                     <br>
                     <input id="date" type="date" oninput="dateValue()">
                 </div>
 
                 <div class="infoarea">
-                    <label for="location">Wedding Location</label>
+                    <label for="location">Wedding Location:</label>
                     <br>
                     <input id="location" type="text" oninput="locationNameValue()">
                 </div>

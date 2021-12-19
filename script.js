@@ -39,6 +39,7 @@ function dateValue(){
     const mo = new Intl.DateTimeFormat('en', { month: 'short' }).format(d);
     const da = new Intl.DateTimeFormat('en', { day: '2-digit' }).format(d);
 
+
     let newDateVal = `${da}-${mo}-${ye}`;
     document.getElementById("weddingdate").innerText = newDateVal;
 }
@@ -51,20 +52,12 @@ function locationNameValue(){
     document.getElementById("weddinglocation").innerText = wLocationUpper;
 }
 
-//Style 3
-function changeStyle3(){
-    document.getElementById("card").style.backgroundImage ='url("images/invitation-Tropical.jpeg")';
-    document.getElementById("initial").style.fontFamily ="Playfair Display";
-    document.getElementById("invitation").style.fontFamily ="Playfair Displayf";
-    document.getElementById("firstname").style.fontFamily ="Playfair Display";
-    document.getElementById("lastname").style.fontFamily ="Playfair Display";
-    document.getElementById("weddingdate").style.fontFamily ="Playfair Display";
-    document.getElementById("weddinglocation").style.fontFamily ="Playfair Display";
-}
+
+
 
 
 //Style 2
-function changeStyle2(){
+/*function changeStyle2(){
     document.getElementById("card").style.backgroundImage ='url("images/invitation-greenery.jpeg")';
     document.getElementById("initial").style.fontFamily ="Trirong, serif";
     document.getElementById("invitation").style.fontFamily ="Trirong, serif";
@@ -80,9 +73,10 @@ function changeStyle2(){
     document.getElementById("lastname").style.color ='black';
     document.getElementById("weddingdate").style.color ='black';
     document.getElementById("weddinglocation").style.color ='black';
-}
+}*/
 
 //Style 3
+/*
 function changeStyle3(){
     document.getElementById("card").style.backgroundImage ='url("images/invitation-Tropical.jpeg")';
     document.getElementById("initial").style.fontFamily ="Playfair Display";
@@ -99,4 +93,29 @@ function changeStyle3(){
     document.getElementById("lastname").style.color ='white';
     document.getElementById("weddingdate").style.color ='white';
     document.getElementById("weddinglocation").style.color ='white';
+}*/
+
+
+//Change Style 
+
+//backgrounds array for setting differenty backgrounds
+let backgrounds = ['url("images/invitation-flower.jpeg")','url("images/invitation-greenery.jpeg")','url("images/invitation-Tropical.jpeg")' ] ;
+
+function changeStyle(image, font, color){
+    document.getElementById("card").style.backgroundImage =backgrounds[image];
+
+    document.getElementById("initial").style.fontFamily =font ;
+    document.getElementById("invitation").style.fontFamily =font;
+    document.getElementById("firstname").style.fontFamily =font;
+    document.getElementById("lastname").style.fontFamily =font;
+    document.getElementById("weddingdate").style.fontFamily =font;
+    document.getElementById("weddinglocation").style.fontFamily =font;
+
+    document.getElementById("card").style.color =color;
+    document.getElementById("initial").style.color =color;
+    document.getElementById("invitation").style.color =color;
+    document.getElementById("firstname").style.color =color;
+    document.getElementById("lastname").style.color =color;
+    document.getElementById("weddingdate").style.color =color;
+    document.getElementById("weddinglocation").style.color =color;
 }
