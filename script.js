@@ -38,10 +38,12 @@ function dateValue(){
     const ye = new Intl.DateTimeFormat('en', { year: 'numeric' }).format(d);
     const mo = new Intl.DateTimeFormat('en', { month: 'short' }).format(d);
     const da = new Intl.DateTimeFormat('en', { day: '2-digit' }).format(d);
+    const weekday = ["SUN","MON","TUE","WED","THU","FRI","SAT"];
+    const dow = weekday[d.getDay()];
 
-
-    let newDateVal = `${da}-${mo}-${ye}`;
-    document.getElementById("weddingdate").innerText = newDateVal;
+    let newDateVal = `${dow}, ${da}-${mo}-${ye}`;
+    
+    document.getElementById('weddingdate').innerHTML = newDateVal;
 }
 
 //Location
@@ -51,8 +53,6 @@ function locationNameValue(){
 
     document.getElementById("weddinglocation").innerText = wLocationUpper;
 }
-
-
 
 
 
@@ -75,29 +75,8 @@ function locationNameValue(){
     document.getElementById("weddinglocation").style.color ='black';
 }*/
 
-//Style 3
-/*
-function changeStyle3(){
-    document.getElementById("card").style.backgroundImage ='url("images/invitation-Tropical.jpeg")';
-    document.getElementById("initial").style.fontFamily ="Playfair Display";
-    document.getElementById("invitation").style.fontFamily ="Playfair Displayf";
-    document.getElementById("firstname").style.fontFamily ="Playfair Display";
-    document.getElementById("lastname").style.fontFamily ="Playfair Display";
-    document.getElementById("weddingdate").style.fontFamily ="Playfair Display";
-    document.getElementById("weddinglocation").style.fontFamily ="Playfair Display";
-
-    document.getElementById("card").style.color ='white';
-    document.getElementById("initial").style.color ='white';
-    document.getElementById("invitation").style.color ='white';
-    document.getElementById("firstname").style.color ='white';
-    document.getElementById("lastname").style.color ='white';
-    document.getElementById("weddingdate").style.color ='white';
-    document.getElementById("weddinglocation").style.color ='white';
-}*/
-
 
 //Change Style 
-
 //backgrounds array for setting differenty backgrounds
 let backgrounds = ['url("images/invitation-flower.jpeg")','url("images/invitation-greenery.jpeg")','url("images/invitation-Tropical.jpeg")' ] ;
 

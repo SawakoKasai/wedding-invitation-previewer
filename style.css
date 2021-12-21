@@ -2,30 +2,41 @@
     font-family: Helvetica;
 }
 
+body{
+    background-color: rgb(225, 231, 225);
+    margin: 0;
+}
 
 #container{
     max-width: 1000px;
     margin: 0 auto;
     display: grid;
     grid-template: 
-    "header1 header1" 80px
+    /*"header1 header1" 80px*/
     "header2 header2" 80px
     "left right" 800px
-    /400px 600px;
+    /350px 650px;
     
 }
-#head{
-    background-color: rgb(43 76 68);;
-    grid-area: header1;
+
+#tophead{
+    background-color: rgb(43 76 68);
+    margin-top: 0px;
+    margin-bottom: 0px;
+
 }
 
-#head h1{
-    margin: auto 0;
-    text-align: center;
-    padding-top: 20px;
+#tophead h1{
     color: white;
     font-family: Helvetica;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+
 }
+
 
 #style{
     /*border: solid;*/
@@ -53,6 +64,7 @@
 
 .infoarea input{
     padding: 5px;
+    padding-right: 30px;
     /*border-radius: 5px;*/
     border-color: darkslategrey;
     border-radius: 5px;
@@ -120,7 +132,7 @@
     top: 300px;
     left: 250px;*/
     text-align: center;
-    font-size: 25px;
+    font-size: 27px;
 }
 
 #lastname{
